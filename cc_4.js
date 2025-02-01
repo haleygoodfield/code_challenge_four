@@ -1,8 +1,8 @@
 // Task 1: If Statements
 
 let purchaseAmount= 114.99; // Declare a variable purchaseAmount with a value.
-let finalAmount = purchaseAmount // Amount after discoumt
-const discount = .25; //25% Discount
+let finalAmount = purchaseAmount; // Amount after discoumt
+let discount = .25; //25% Discount
 if (purchaseAmount > 100) { // Use an if statement to apply a discount if the amount is greater than $100.
     finalAmount = purchaseAmount * discount;
 }
@@ -12,7 +12,12 @@ console.log('Final Amount: $ $${finalAmount}'); // Log the final amount to the c
 // fix template literal later... 
 
 // Task 2: For Loop
-// Declare an array sales with at least five sales figures
+let sales = [100, 200, 300, 400, 500];// Declare an array sales with at least five sales figures
+let totalSales = 0;
 
+for (let i=0; i < sales.length; i++) { // Use a for loop to calculate the total sales.
+    totalSales += sales[i];
+}
 
+console.log('Total sales: $${totalSales}'); // Log the total sales to the console using a template literal.
 
