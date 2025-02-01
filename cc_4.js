@@ -51,4 +51,9 @@ for (let key in employee) { // Use a for...in loop to iterate through the object
     console.log(`${key}: ${employee[key]}`); // Log each property and value to the console using a template literal.
 };
 
+// Task 6: For...Of Loop
+let products = ["Earings", "Necklace", "Bracelet"]; // Declare an array products with at least three product names
+for (let product of products) { // Use a for...of loop to display each product.
+    console.log(`Product Listing: ${product}`); // Log each product name to the console using a template literal.
+}
 
