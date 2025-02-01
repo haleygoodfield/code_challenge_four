@@ -29,7 +29,17 @@ while (stock > 0) { // Use a while loop to decrease stock until it reaches zero.
 
 console.log("Stock Decreased to Zero."); // Final log to console using a template literal 
 
+// FROM NOW ON USE ` INSTEAD OF ' FOR TEMPLATE LITERALS 
+// DO NOT FUCK IT UP OR YOU WILL FAIL . . .
+
 // Task 4: Do...While Loop 
-let response = 0; // Declare a variable responses with an initial value of zero.
+let responses = 0; // Declare a variable responses with an initial value of zero.
+
+do {
+    responses++; // Use a do...while loop to collect responses
+    console.log(`Collected Responses: ${responses}`); // Log each response count to the console using a template literal.
+} while (responses < 3); // Simulate user input with responses++ until it reaches 3
+
+
 
 
