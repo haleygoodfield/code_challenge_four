@@ -40,6 +40,15 @@ do {
     console.log(`Collected Responses: ${responses}`); // Log each response count to the console using a template literal.
 } while (responses < 3); // Simulate user input with responses++ until it reaches 3
 
+// Task 5: For...In Loop 
+let employee = {   // Declare an object employee with properties {name, position, and salary}.
+    name: "Bethany",
+    position: "Product Manager",
+    salary: 85000
+};
 
+for (let key in employee) { // Use a for...in loop to iterate through the object properties.
+    console.log(`${key}: ${employee[key]}`); // Log each property and value to the console using a template literal.
+};
 
 
