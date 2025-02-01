@@ -7,9 +7,7 @@ if (purchaseAmount > 100) { // Use an if statement to apply a discount if the am
     finalAmount = purchaseAmount * discount;
 }
 
-console.log('Final Amount: $ $${finalAmount}'); // Log the final amount to the console using a template literal, e.g.
-
-// fix template literal later... 
+console.log(`Final Amount: $${finalAmount}`); // Log the final amount to the console using a template literal, e.g.
 
 // Task 2: For Loop
 let sales = [100, 200, 300, 400, 500];// Declare an array sales with at least five sales figures
@@ -19,19 +17,19 @@ for (let i=0; i < sales.length; i++) { // Use a for loop to calculate the total 
     totalSales += sales[i];
 }
 
-console.log('Total sales: $ $${totalSales}'); // Log the total sales to the console using a template literal.
+console.log(`Total sales: $${totalSales}`); // Log the total sales to the console using a template literal.
 
 // Task 3: While Loop
 let stock = 10; //Declare a variable stock with an initial value of 10.
 
 while (stock > 0) { // Use a while loop to decrease stock until it reaches zero.
     stock--;
-    console.log('Stock Decrement: ${stock}'); // Log each decrement to the console using a template literal.
+    console.log(`Stock Decrement by $1: $${stock}`); // Log each decrement to the console using a template literal.
 }
 
 console.log("Stock Decreased to Zero."); // Final log to console using a template literal 
 
+// Task 4: Do...While Loop 
+let response = 0; // Declare a variable responses with an initial value of zero.
 
-
-      
 
