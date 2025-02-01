@@ -57,3 +57,11 @@ for (let product of products) { // Use a for...of loop to display each product.
     console.log(`Product Listing: ${product}`); // Log each product name to the console using a template literal.
 }
 
+// Task 7: forEach()Method
+let orders = [222, 333, 444]; // Declare an array orders with at least three order IDs
+
+orders.forEach(order => {
+    console.log(`Order Processing by ID:' ${order}`); // Use the forEach() method to log each order ID to the console using a template literal.
+});
+
+
