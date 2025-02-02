@@ -69,7 +69,7 @@ for (let product of products) { // Use a for...of loop to display each product.
 let orders = [222, 333, 444]; // Declare an array orders with at least three order IDs
 
 orders.forEach(order => {
-    console.log(`Order Processing by ID:' ${order}`); // Use the forEach() method to log each order ID to the console using a template literal.
+    console.log(`Order Processing by ID: ${order}`); // Use the forEach() method to log each order ID to the console using a template literal.
 });
 
 
