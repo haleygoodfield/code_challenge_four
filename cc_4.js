@@ -1,9 +1,9 @@
 // Task 1: If Statements- Scenario: Customer Dicsounts 
 let purchaseAmount= 114.99; // Declare a variable purchaseAmount with a value.
 let finalAmount = purchaseAmount; // Amount after discoumt
-let discount = .25; //25% Discount
+
 if (purchaseAmount > 100) { // Use an if statement to apply a discount if the amount is greater than $100.
-    finalAmount = purchaseAmount * discount;
+    finalAmount = purchaseAmount * 0.9; // Discount
 };
 
 console.log(`Final Amount After Discount: $${finalAmount}`); // Log the final amount to the console using a template literal, e.g.
