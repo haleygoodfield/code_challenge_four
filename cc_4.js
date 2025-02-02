@@ -80,7 +80,7 @@ function calculateTax(amount, taxRate) { // Write a function calculateTax that t
 };                                  
 let tax = calculateTax(15000, 0.05) // Ammount 15,000, tax rate 5%
 
-console.log(`Amount with Tax: $${tax}`); // Log the result to the console using a template literal.
+console.log(`Calculated Tax: $${tax}`); // Log the result to the console using a template literal.
 
 
 
@@ -98,8 +98,8 @@ console.log(`Discounted Price: $${discountPrice}`);
 const calculatePoints = (purchaseAmount) => { // Write an arrow function calculatePoints that takes a purchase amount and returns points earned (1 point per $10 spent).
     return (purchaseAmount / 10);
 };
-let points = calculatePoints(100);
+let points = calculatePoints(100); // $100 Dollars Spent
 
-console.log(`Points Earned from Rewards: ${points}`); // Log the result to the console using a template literal.
+console.log(`Points Earned for Rewards: ${points}`); // Log the result to the console using a template literal.
 
  
