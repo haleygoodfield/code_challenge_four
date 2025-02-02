@@ -86,10 +86,20 @@ console.log(`Amount with Tax: $${tax}`); // Log the result to the console using 
 
 // Task 9: Function Expressions- Scenario: Discount Application
 const applyDiscount = function (price, discountPercent) { // Declare a function expression applyDiscount that takes a price and discount percentage.
-    return price - (price * (discountPercentage / 100)); // Return the discounted price.
+    return price - (price * (discountPercent / 100)); // Return the discounted price.
 };
 
 let discountPrice = applyDiscount(500, 20) // Price at $500, dicount of 20%
 console.log(`Discounted Price: $${discountPrice}`);
 
 
+
+// Task 10: Arrow Functions- Scenario: Loyalty Points
+const calculatePoints = (purchaseAmount) => { // Write an arrow function calculatePoints that takes a purchase amount and returns points earned (1 point per $10 spent).
+    return (purchaseAmount / 10);
+};
+let points = calculatePoints(100);
+
+console.log(`Points Earned from Rewards: ${points}`); // Log the result to the console using a template literal.
+
+ 
