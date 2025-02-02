@@ -6,7 +6,7 @@ if (purchaseAmount > 100) { // Use an if statement to apply a discount if the am
     finalAmount = purchaseAmount * discount;
 }
 
-console.log(`Final Amount: $${finalAmount}`); // Log the final amount to the console using a template literal, e.g.
+console.log(`Final Amount After Discount: $${finalAmount}`); // Log the final amount to the console using a template literal, e.g.
 
 
 
@@ -26,11 +26,11 @@ console.log(`Total sales: $${totalSales}`); // Log the total sales to the consol
 let stock = 10; //Declare a variable stock with an initial value of 10.
 
 while (stock > 0) { // Use a while loop to decrease stock until it reaches zero.
-    stock--;
+    stock--; // Decrements by 1
     console.log(`Stock Decrement by $1: $${stock}`); // Log each decrement to the console using a template literal.
 }
 
-console.log("Stock Decreased to Zero."); // Final log to console using a template literal 
+console.log("Stock Depleted to Zero."); // Final log to console using a template literal 
 
 
 
@@ -61,7 +61,7 @@ for (let key in employee) { // Use a for...in loop to iterate through the object
 let products = ["Earings", "Necklace", "Bracelet"]; // Declare an array products with at least three product names
 for (let product of products) { // Use a for...of loop to display each product.
     console.log(`Product Listing: ${product}`); // Log each product name to the console using a template literal.
-}
+};
 
 
 
@@ -75,3 +75,9 @@ orders.forEach(order => {
 
 
 // Task 8: Function Declaration- Scenario: Tax Calculation 
+function calculateTax(amount, taxRate) { // Write a function calculateTax that takes an amount and tax rate.
+    return amount * taxRate; // Return the calculated tax 
+};                                  
+let tax = calculateTax(15000, 0.05) // Ammount 15,000, tax rate 5%
+
+console.log(`Amount with Tax: $${tax}`); // Log the result to the console using a template literal.
