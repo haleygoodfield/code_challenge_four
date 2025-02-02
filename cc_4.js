@@ -4,7 +4,7 @@ let finalAmount = purchaseAmount; // Amount after discoumt
 let discount = .25; //25% Discount
 if (purchaseAmount > 100) { // Use an if statement to apply a discount if the amount is greater than $100.
     finalAmount = purchaseAmount * discount;
-}
+};
 
 console.log(`Final Amount After Discount: $${finalAmount}`); // Log the final amount to the console using a template literal, e.g.
 
@@ -16,7 +16,7 @@ let totalSales = 0;
 
 for (let i=0; i < sales.length; i++) { // Use a for loop to calculate the total sales.
     totalSales += sales[i];
-}
+};
 
 console.log(`Total sales: $${totalSales}`); // Log the total sales to the console using a template literal.
 
@@ -28,7 +28,7 @@ let stock = 10; //Declare a variable stock with an initial value of 10.
 while (stock > 0) { // Use a while loop to decrease stock until it reaches zero.
     stock--; // Decrements by 1
     console.log(`Stock Decrement by $1: $${stock}`); // Log each decrement to the console using a template literal.
-}
+};
 
 console.log("Stock Depleted to Zero."); // Final log to console using a template literal 
 
@@ -81,3 +81,15 @@ function calculateTax(amount, taxRate) { // Write a function calculateTax that t
 let tax = calculateTax(15000, 0.05) // Ammount 15,000, tax rate 5%
 
 console.log(`Amount with Tax: $${tax}`); // Log the result to the console using a template literal.
+
+
+
+// Task 9: Function Expressions- Scenario: Discount Application
+const applyDiscount = function (price, discountPercent) { // Declare a function expression applyDiscount that takes a price and discount percentage.
+    return price - (price * (discountPercentage / 100)); // Return the discounted price.
+};
+
+let discountPrice = applyDiscount(500, 20) // Price at $500, dicount of 20%
+console.log(`Discounted Price: $${discountPrice}`);
+
+
